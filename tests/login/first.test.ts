@@ -41,7 +41,7 @@ describe("Login form", function() {
     await driver.sleep(4000);
     await driver.findElement(By.css('[name="login"]')).sendKeys("Grishus");
     await driver.sleep(2000);
-    await driver.findElement(By.css('[name="password"')).sendKeys("cjceyjr23");
+    await driver.findElement(By.css('[name="password"')).sendKeys("пароль");
     await driver.findElement(By.css('[type="submit"]')).click();
     await driver.sleep(1000);
     await driver.findElement(By.css('data-ga-click="Dashboard, click, Sidebar header new repo button - context:user"')).click();
